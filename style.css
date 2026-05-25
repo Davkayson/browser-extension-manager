@@ -36,22 +36,33 @@ img {
 .main-container {
   display: flex;
   flex-direction: column;
+  margin: 2rem auto;
   align-items: center;
+  width: 100%;
 }
 
-.extensions {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  background-color: var(--Neutral-0);
-  padding: 1rem 3rem;
-  border-radius: 0.5rem;
+.logo-images {
+  width: 92vw;
 }
 
 .sun-moon {
-  background-color: var(--Neutral-300);
+  padding: 0.8rem;
+  background-color: var(--Neutral-100);
+  border-radius: 0.5rem;
+}
+
+.extensions-logo {
+  display: flex;
+  /* width: 92vw; */
+  gap: 6rem;
+  align-items: center;
+  background-color: var(--Neutral-0);
   padding: 0.5rem;
   border-radius: 0.5rem;
+}
+
+.first-container {
+  width: 92vw;
 }
 
 .header {
@@ -64,19 +75,21 @@ img {
 
 .header-buttons {
   display: flex;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .header-buttons button {
   background-color: var(--Neutral-0);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 2rem;
   font-size: 1rem;
+  border: none;
 }
 
 .header-buttons .button-red {
   background-color: var(--Red-700);
   color: var(--Neutral-0);
+  padding: 0.5rem 1rem;
 }
 
 .second-container {
@@ -94,6 +107,7 @@ img {
   padding: 1rem;
   gap: 1rem;
 }
+
 .sections-logo {
   display: flex;
   align-items: flex-start;
@@ -114,6 +128,7 @@ img {
 .bottom-buttons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .bottom-buttons button {
@@ -154,6 +169,39 @@ img {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .logo-images {
+    width: 80vw;
+  }
+
+  .extensions-logo {
+    justify-content: space-between;
+  }
+
+  .first-container {
+    width: 80vw;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .second-container {
+    width: 80vw;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .sections {
+    border: 1px solid red;
+    row-gap: 1.5rem;
+  }
 }
