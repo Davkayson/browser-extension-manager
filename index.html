@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link
       rel="icon"
       type="image/png"
@@ -18,7 +17,7 @@
       <div class="logo-images">
         <div class="extensions-logo">
           <img src="/assets/images/logo.svg" />
-          <div class="sun-moon">
+          <div class="sun-moon" id="theme-toggle">
             <div class="moon">
               <img src="/assets/images/icon-moon.svg" />
             </div>
@@ -33,9 +32,9 @@
         <div class="header">
           <h1>Extensions List</h1>
           <div class="header-buttons">
-            <button class="button-red">All</button>
-            <button>Active</button>
-            <button>Inactive</button>
+            <button class="button-red" id="red">All</button>
+            <button id="active">Active</button>
+            <button id="inactive">Inactive</button>
           </div>
         </div>
       </div>
@@ -283,8 +282,6 @@
           </div>
         </div>
       </div>
-
-      <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
 
       <div class="attribution">
         Challenge by
