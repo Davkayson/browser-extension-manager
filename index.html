@@ -16,8 +16,8 @@
     <div class="main-container">
       <div class="logo-images">
         <div class="extensions-logo">
-          <img src="/assets/images/logo.svg" />
-          <div class="sun-moon" id="theme-toggle">
+          <img src="/assets/images/logo.svg" class="logo" />
+          <div class="sun-moon" id="theme-toggle" tabindex="0">
             <div class="moon">
               <img src="/assets/images/icon-moon.svg" />
             </div>
@@ -32,15 +32,15 @@
         <div class="header">
           <h1>Extensions List</h1>
           <div class="header-buttons">
-            <button class="button-red" id="red">All</button>
-            <button id="active">Active</button>
-            <button id="inactive">Inactive</button>
+            <button class="button-red filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="inactive">Inactive</button>
           </div>
         </div>
       </div>
 
       <div class="second-container">
-        <div class="sections">
+        <div class="sections" data-status="active">
           <div class="sections-logo">
             <img src="/assets/images/logo-devlens.svg" class="logo" />
             <div class="sections-text">
@@ -51,17 +51,17 @@
             </div>
           </div>
           <div class="bottom-buttons">
-            <button>Remove</button>
+            <button class="remove-btn">Remove</button>
             <div class="toggle-button">
               <input type="checkbox" id="check" class="checkbox" />
-              <label for="check" class="label">
+              <label for="check" class="toggle-switch">
                 <div class="ball"></div>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="sections">
+        <div class="sections" data-status="active">
           <div class="sections-logo">
             <img src="/assets/images/logo-style-spy.svg" class="logo" />
             <div class="sections-text">
@@ -70,17 +70,17 @@
             </div>
           </div>
           <div class="bottom-buttons">
-            <button>Remove</button>
+            <button class="remove-btn">Remove</button>
             <div class="toggle-button">
               <input type="checkbox" id="check" class="checkbox" />
-              <label for="check" class="label">
+              <label for="check" class="toggle-switch">
                 <div class="ball"></div>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="sections">
+        <div class="sections" data-status="inactive">
           <div class="sections-logo">
             <img src="/assets/images/logo-speed-boost.svg" class="logo" />
             <div class="sections-text">
@@ -89,17 +89,17 @@
             </div>
           </div>
           <div class="bottom-buttons">
-            <button>Remove</button>
+            <button class="remove-btn">Remove</button>
             <div class="toggle-button">
               <input type="checkbox" id="check" class="checkbox" />
-              <label for="check" class="label">
+              <label for="check" class="toggle-switch">
                 <div class="ball"></div>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="sections">
+        <div class="sections" data-status="active">
           <div class="sections-logo">
             <img src="/assets/images/logo-json-wizard.svg" class="logo" />
             <div class="sections-text">
@@ -110,17 +110,17 @@
             </div>
           </div>
           <div class="bottom-buttons">
-            <button>Remove</button>
+            <button class="remove-btn">Remove</button>
             <div class="toggle-button">
               <input type="checkbox" id="check" class="checkbox" />
-              <label for="check" class="label">
+              <label for="check" class="toggle-switch">
                 <div class="ball"></div>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="sections">
+        <div class="sections" data-status="active">
           <div class="sections-logo">
             <img src="/assets/images/logo-tab-master-pro.svg" class="logo" />
             <div class="sections-text">
@@ -129,17 +129,17 @@
             </div>
           </div>
           <div class="bottom-buttons">
-            <button>Remove</button>
+            <button class="remove-btn">Remove</button>
             <div class="toggle-button">
               <input type="checkbox" id="check" class="checkbox" />
-              <label for="check" class="label">
+              <label for="check" class="toggle-switch">
                 <div class="ball"></div>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="sections">
+        <div class="sections" data-status="inactive">
           <div class="sections-logo">
             <img src="/assets/images/logo-viewport-buddy.svg" class="logo" />
             <div class="sections-text">
@@ -151,17 +151,17 @@
             </div>
           </div>
           <div class="bottom-buttons">
-            <button>Remove</button>
+            <button class="remove-btn">Remove</button>
             <div class="toggle-button">
               <input type="checkbox" id="check" class="checkbox" />
-              <label for="check" class="label">
+              <label for="check" class="toggle-switch">
                 <div class="ball"></div>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="sections">
+        <div class="sections" data-status="active">
           <div class="sections-logo">
             <img src="/assets//images/logo-markup-notes.svg" class="logo" />
             <div class="sections-text">
@@ -173,17 +173,17 @@
             </div>
           </div>
           <div class="bottom-buttons">
-            <button>Remove</button>
+            <button class="remove-btn">Remove</button>
             <div class="toggle-button">
               <input type="checkbox" id="check" class="checkbox" />
-              <label for="check" class="label">
+              <label for="check" class="toggle-switch">
                 <div class="ball"></div>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="sections">
+        <div class="sections" data-status="inactive">
           <div class="sections-logo">
             <img src="/assets/images/logo-grid-guides.svg" class="logo" />
             <div class="sections-text">
@@ -194,17 +194,17 @@
             </div>
           </div>
           <div class="bottom-buttons">
-            <button>Remove</button>
+            <button class="remove-btn">Remove</button>
             <div class="toggle-button">
               <input type="checkbox" id="check" class="checkbox" />
-              <label for="check" class="label">
+              <label for="check" class="toggle-switch">
                 <div class="ball"></div>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="sections">
+        <div class="sections" data-status="active">
           <div class="sections-logo">
             <img src="/assets/images/logo-palette-picker.svg" class="logo" />
             <div class="sections-text">
@@ -213,17 +213,17 @@
             </div>
           </div>
           <div class="bottom-buttons">
-            <button>Remove</button>
+            <button class="remove-btn">Remove</button>
             <div class="toggle-button">
               <input type="checkbox" id="check" class="checkbox" />
-              <label for="check" class="label">
+              <label for="check" class="toggle-switch">
                 <div class="ball"></div>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="sections">
+        <div class="sections" data-status="active">
           <div class="sections-logo">
             <img src="/assets/images/logo-link-checker.svg" class="logo" />
             <div class="sections-text">
@@ -232,17 +232,17 @@
             </div>
           </div>
           <div class="bottom-buttons">
-            <button>Remove</button>
+            <button class="remove-btn">Remove</button>
             <div class="toggle-button">
               <input type="checkbox" id="check" class="checkbox" />
-              <label for="check" class="label">
+              <label for="check" class="toggle-switch">
                 <div class="ball"></div>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="sections">
+        <div class="sections" data-status="inactive">
           <div class="sections-logo">
             <img src="/assets/images/logo-dom-snapshot.svg" class="logo" />
             <div class="sections-text">
@@ -251,17 +251,17 @@
             </div>
           </div>
           <div class="bottom-buttons">
-            <button>Remove</button>
+            <button class="remove-btn">Remove</button>
             <div class="toggle-button">
               <input type="checkbox" id="check" class="checkbox" />
-              <label for="check" class="label">
+              <label for="check" class="toggle-switch">
                 <div class="ball"></div>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="sections">
+        <div class="sections" data-status="active">
           <div class="sections-logo">
             <img src="/assets/images/logo-console-plus.svg" class="logo" />
             <div class="sections-text">
@@ -272,10 +272,10 @@
             </div>
           </div>
           <div class="bottom-buttons">
-            <button>Remove</button>
+            <button class="remove-btn">Remove</button>
             <div class="toggle-button">
               <input type="checkbox" id="check" class="checkbox" />
-              <label for="check" class="label">
+              <label for="check" class="toggle-switch">
                 <div class="ball"></div>
               </label>
             </div>
